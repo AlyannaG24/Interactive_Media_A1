@@ -1,55 +1,63 @@
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: lightpink;
+    background-color: #ffe5ec;
     margin: 0px
 }
 
 .wrap {
-    background-image: url(ooagi.png);
-    background-size: 100px;
-    padding: 0;
+    background-image: url(repeating\ flowers\ bg.jpg);
+    background-size: 400px;
+    border: 30px solid transparent;
+    border-image: url(lace-border.png) 90 round;
+    border-image-outset: 30px;
+
 }
+/* I first had issues getting the background image to fill the whole top of the page. first I realised it wasn't filling the margins so I made the margins 0 and replaced
+it with more padding, still had some issues I didnt really understand so i ended up just put h1-3 into a div and the background img for the whole div and it works now.
+I also used a repeating pattern image so the background looks seamless*/
 
 h1 {
-    color: lightcoral;
-    font-size: 400px;
+    color: white;
+    font-size: 500px;
     margin:0;
     padding: 50px;
     padding-top: 200px;
-    -webkit-text-stroke: 6px white;
+    text-shadow: 8px 8px 8px lightpink;
+    -webkit-text-stroke: 1px black;
 
 }
+/* I think a white title fits the theme best but gets lost in the background, so I added a shadow to it so it can pop out more and be mroe readable */
 
 h2 {
     font-size: 50px;
-    padding: 50px;
+    padding: 70px;
     padding-bottom: 0px;
-    
-
+     
 }
 
 h3 {
-    font-size: 20px;
-    padding-left: 50px;
+    font-size: 30px;
+    padding-left: 70px;
     padding-bottom: 50px;
-   
-}
 
-/* I first had issues getting the background image to fill the whole top of the page. first I realised it wasn't filling the margins so I made the margins 0 and replaced
-it with more padding, still had some issues I didnt really understand so i ended up just put h1-3 into a div and the background img for the whole div and it works now */
+}
+/* i think the headings aren't aligned even though all the padding was set to 50px because h1 text size is so muhc bigger than h2 and 3.
+to fix this i made the padding for h2 and 3 70px instead of 50 */
+
 
 .question {
     border: 20px solid transparent;
     border-image: url(lace-border.png) 90 round;
     border-radius: 5px;
     border-image-outset: 20px;
+    box-shadow: 40px 40px 5px 5px lightpink;
 
     padding: 15px;
-    margin-bottom: 80px;
-    margin-top: 80px;
+    margin-bottom: 100px;
+    margin-top: 100px;
     background-color: rgba(255, 255, 255, 0.7);
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 400px;
+    margin-right: 400px;
     /* I wanted to decorate the text boxes because they looked too plain. I thought the regular borders looksed too plain too so 
     I looked up if they was a way to do any other borders and I found you can use an image border*/
 }
@@ -61,3 +69,16 @@ it with more padding, still had some issues I didnt really understand so i ended
   }
   
   
+.vid{
+    display: flex;
+    justify-content: center;
+
+}
+
+video{ 
+    border: 20px solid transparent;
+    border-image: url(lace-border.png) 90 round;
+    margin: 100px
+    
+}
+
