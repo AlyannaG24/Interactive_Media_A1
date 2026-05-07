@@ -101,7 +101,9 @@ transform:
   /* after  messing around with 3D transformations, it still didnt look right so i realised i actually just needed
   a skew instead of any 3D rotation*/
 
- 
+ /* honestly, this positioning (mainly reactive scaling) was a nightmare to do and theres probably a batter way
+ to do this. I'm aware its not amazing and is still off from where it should be when the window size is altered
+ but im leaving it at this because i just need to move on and ill come back to this later if i have time;*/
 }
 
 .music-info {
