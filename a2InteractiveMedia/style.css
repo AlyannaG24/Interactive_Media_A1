@@ -29,11 +29,12 @@ body {
   justify-content: space-between;
 
   background-image: url('light_rain.png');
-  background-size: Contain;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
-  height: 100%
+  height: 100%;
+  overflow: hidden;
   /* I wanted to create a single hand dawn style webpage where you can interact with things in the image to toggle different effects */
 }
 
@@ -41,9 +42,10 @@ body {
 
 /* Create a container for the main content */
 .container {
-  max-width: 1000px;
-  width: 100%;
-  padding: 10px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
@@ -76,25 +78,24 @@ nav a {
 
 /* Media player styling */
 .media-player {
-  width: 30vw;
-  max-width: 800px;
-  margin: 0 auto;
+  width: 40vw;
+  height: auto;
+  aspect-ratio: 16 / 9;
   
   display: flex;
   flex-direction: column;
-
   justify-content: center;
   align-items: center;
   /* used flex box to bring the media player to the center but I also need it 
   to be positioned int he laptop screen */
 
-  min-height: 100vh;
+    border: 2px solid black; /* temporary so you can see the size */
+
 
 transform:
   translate(-21vw, -16vh)
-  perspective(400px)
-  rotate(-15deg)
-  skew(-15deg, 0deg)
+  rotate(-17deg)
+  skew(-15deg, 0deg);
   /* after searching, I used the w3schools site to look for how to transform (specifically to rotate) and found that i can 
   also transform in 3D so i can fit the media player to look like its actually in the screen*/
   /* after  messing around with 3D transformations, it still didnt look right so i realised i actually just needed
@@ -104,7 +105,7 @@ transform:
 }
 
 .music-info {
-  font-size: 2vw;
+  font-size: calc(12px + 1vw);
 
 }
 
@@ -114,7 +115,7 @@ transform:
   align-items: center;
   gap: 1rem;
   margin-top: 10px;
-  width: 60%;
+  width: 70%;
 }
 
 .custom-controls button {
@@ -132,6 +133,7 @@ transform:
 .progress-bar {
   width: 100%;
   height: 10px;
+  margin: 0 auto;
   background-color: transparent;
   border: 2px solid black;
  /* Because I made the play/pause button transparent, the progress bar doesnt look centered anymore, 
