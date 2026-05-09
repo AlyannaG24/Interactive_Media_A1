@@ -29,7 +29,7 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  background-image: url('light_rain.png');
+  background-image: url('light-bg.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -101,6 +101,7 @@ transform:
   skew(-18deg, 0deg);
   /* after searching, I used the w3schools site to look for how to transform (specifically to rotate) and found that i can 
   also transform in 3D so i can fit the media player to look like its actually in the screen*/
+  
   /* after  messing around with 3D transformations, it still didnt look right so i realised i actually just needed
   a skew instead of any 3D rotation*/
 
@@ -158,11 +159,11 @@ transform:
 
 .lights {
   background: transparent;
-  border: 2px solid black;
+  border: transparent;
   cursor: pointer;
   color: transparent;
 
-  aspect-ratio: 9 / 12;
+
   width: 6vw;
 
   min-width: 50px;
@@ -175,4 +176,6 @@ transform:
   bottom: 86vh;
   right:6vw;
 /* I realise by now that i underestimated this webpage layout and i'm having great difficulty even knowing what to look up for help, but I'm invested in this idea now */
+/* I decided to make the interactive buttons its own image so at least its alwways clickable and the 'invisible button' is not way off */
+
 }
