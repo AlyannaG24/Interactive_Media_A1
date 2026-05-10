@@ -4,41 +4,42 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- add the font family of your choice -->
+    <title>Study Music</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Reenie+Beanie&display=swap');
+      </style>
+
+
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <h1>Media Player Website</h1>
-    </header>
 
     <!-- Navigation Section -->
-    <nav>
+    <nav class="nav button">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Videos</a></li>
-        <li><a href="#">Music</a></li>
-        <li><a href="#">Playlists</a></li>
-        <!-- Add or remove navigation items as needed -->
+        <li><button id="back-btn">Back</button></li>
+        <li><button id="next-btn">Next</button></li>
+        <!-- Decided to make the nav items buttons to make it easier to make them clickable -->
       </ul>
     </nav>
 
     <!-- Main Content Section -->
     <main class="container">
       <!-- Media Player Section -->
-      <div class="media-player">
-        <video id="custom-video-player" controls>
-          <source
-            src="https://thelongesthumstore.sgp1.cdn.digitaloceanspaces.com/IM-2250/miac.mp4"
-            type="video/mp4"
-          />
-        </video>
+          <div class="media-player">
+            <audio id="custom-audio-player">
+              <source src="track-1.mp3" type="audio/mpeg" />
+            </audio>
+
+         <div class="music-info">
+            <h2 id="song-title">Lofi beats</h2>
+         </div>
+        
+         
         <div class="custom-controls">
-          <button id="play-pause-btn" onclick="togglePlayPause()">
+          <button id="play-pause-btn">
             <img
               id="play-pause-img"
               src="https://img.icons8.com/ios-glyphs/30/play--v1.png"
@@ -46,6 +47,7 @@
               width="24"
               height="24"
             />
+
           </button>
           <!-- add the missing buttons or functionality here -->
           <div class="progress-bar">
@@ -54,21 +56,27 @@
         </div>
       </div>
 
-      <!-- Additional Content Section -->
-      <section>
-        <h2>Additional Content</h2>
-        <p>This is where you can showcase any other relevant content.</p>
-        <!-- Add more content as needed -->
-      </section>
+
+
+
+      <div>
+        <button class="lights">
+          <img 
+          id="light-switch-img" 
+          src="lights-on.png" 
+          alt="Light switch toggle" />
+        </button>
+      </div>
+
+    
+
+
+
+
+
     </main>
 
-    <!-- Footer Section -->
-    <footer>
-      <p>&copy; 2024 Media Player Website. All rights reserved.</p>
-      <a href="https://icons8.com/icon/59862/play">Play</a> icon by
-      <a href="https://icons8.com">Icons8</a>
-      <a href="https://icons8.com/icon/61012/pause">Pause</a> icon by
-      <a href="https://icons8.com">Icons8</a>
-    </footer>
+
+
   </body>
 </html>
