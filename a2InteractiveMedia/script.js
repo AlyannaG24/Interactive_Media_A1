@@ -23,8 +23,9 @@ const songs = [
     file: "track-2.mp3",
   },
   {
-    title: "Rain focus",
+    title: "Rain",
     file: "track-3.mp3",
+    // named the tracks
   },
 ];
 
@@ -79,7 +80,8 @@ function loadSong(index) {
 
   audio.play();
 }
-
+// using w3schools, youtube and MDN tutorials/guides i was able to get the next and back song buttons
+// with 3 songs. I was very confused but it works
 
 
 
@@ -110,3 +112,5 @@ lightsButton.addEventListener("click", () => {
   }
 })
 // I based this on the already existing play/pause button and I used the w3schools 'js if else' section to help me 
+// I needed the button to do 3 actions simultaniously: swap bg image, swap bg colourand swap the button image. it was all pretty 
+// straightforward so the online guides showed me what I needed to do
