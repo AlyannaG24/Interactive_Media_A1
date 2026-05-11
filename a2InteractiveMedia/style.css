@@ -7,6 +7,7 @@
   --main-btn-bg-color: #938989;
 
   /* changed bg and text colours to suit aesthetic */
+  /* added a 'secondary bg colour' so when the site switches to dark mode the bg also changes to match */
 
 }
 
@@ -74,6 +75,19 @@ nav a {
   text-decoration: none;
   color: var(--text-color);
 }
+
+nav button {
+  background: transparent;
+  border: none;
+
+  font-size: calc(20px + 1vw);
+
+  color: var(--text-color);
+  cursor: pointer;
+
+}
+/* kept the nav bar mostly the same but had to add a few more things because i turned them into buttons */
+/* I found you can do these calculations in css for resizing elements in a tiktok, so i tried it here */
 
 
 
@@ -155,6 +169,11 @@ transform:
   transition: width 0.3s ease;
   
 }
+/* I tried to keep this mostly the same, just adjusted some of the design like colour and bg */
+
+
+
+
 
 
 .lights {
@@ -164,7 +183,7 @@ transform:
   color: transparent;
 
 
-  width: 6vw;
+  width: 2vw;
 
   min-width: 50px;
   min-height: 90px;
