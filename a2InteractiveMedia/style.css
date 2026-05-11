@@ -106,7 +106,7 @@ nav button {
   /* used flex box to bring the media player to the center but I also need it 
   to be positioned int he laptop screen */
 
-    border: 2px solid black; /* temporary so you can see the size */
+    border: transparent; /* temporary so you can see the size */
 
 
 transform:
