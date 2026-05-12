@@ -38,6 +38,7 @@ body {
   height: 100%;
   overflow: hidden;
   /* I wanted to create a single hand dawn style webpage where you can interact with things in the image to toggle different effects */
+  /* I'm not sure if i was doing it wrong, but when i put the font into the head of html it didnt work like the last assingmnent so i put it into the body here too */
 }
 
 /* Add additional styles as needed */
@@ -86,8 +87,9 @@ nav button {
   cursor: pointer;
 
 }
-/* kept the nav bar mostly the same but had to add a few more things because i turned them into buttons */
+/* kept the nav bar mostly the same but had to add a few more things because i turned them into buttons. to keep it looking like the previous nav bar, i made the border and bg transparent*/
 /* I found you can do these calculations in css for resizing elements in a tiktok, so i tried it here */
+/* I noticed in the existing code the 'curser:pointer', I found was important because it indicates that something is interactable so ive added it here too*/
 
 
 
